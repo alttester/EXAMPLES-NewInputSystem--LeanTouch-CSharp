@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Plugins/CW/LeanTouch/Examples/01 Finger Down.unity
+    guid: a6e339405953bb94eb24436b8bcf3a6e
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/02 Finger Up.unity
+    guid: e75bcbf9fc009e7499be19cd0a6d834f
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/03 Finger Swipe.unity
+    guid: e36b63a4ae51f394abdf3edf4c81a515
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/04    Rotation.unity
+    guid: c525e5b6627cf214993e6e54947d3194
+  - enabled: 1
+    path: Assets/Plugins/CW/LeanTouch/Examples/05    Direction 4.unity
+    guid: b9f2e12e189bfe64087696f16aaa9ddf
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/06    Direction 8.unity
+    guid: 39fc81c139246c14cb65039a492df9df
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/07 Finger Tap.unity
+    guid: 9288129b03a30fd4590f54bacfa4fc2b
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/08    Spawn.unity
+    guid: 935b453473865f3458f13d20bc896092
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/09       Block.unity
+    guid: 0e08b589e5c339642a6ebfc31372ffab
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/10       Double.unity
+    guid: 3ba993e45bd8bc540a58ab0bf1a234f5
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/11 Finger Old.unity
+    guid: 748227db34677044da44badff4bbdb65
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/12 Transform.unity
+    guid: bcc6d67bd10127441a6feb2e68bfe9e8
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/13    Relative.unity
+    guid: f4503f8040e549f489cd402bce299069
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/14 Selectable.unity
+    guid: 32b6c4e824ab1a646a0178fbf08c24c4
+  - enabled: 1
+    path: Assets/Plugins/CW/LeanTouch/Examples/15 Tap To Select.unity
+    guid: 0270b2d69ee57d34685f0d50ed0bdb12
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/16    Limit = Stop At Max.unity
+    guid: 596383cc7b114c94c86878b06efdaa31
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/17    Limit = Deselect First.unity
+    guid: 0ff9b8a646d45e64182dafde410dce07
+  - enabled: 1
+    path: Assets/Plugins/CW/LeanTouch/Examples/18    Destroy.unity
+    guid: 12f8ad357a87bf440bade5f78a603168
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/19    Transform.unity
+    guid: 6c0bfed60f6dc4d458e7182fae66de94
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/20    Transform Relative.unity
+    guid: 686177cc768e900428f25390746141f8
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/21 Tap To Toggle.unity
+    guid: 9b3bc245475ada847ab483d51b2d5d15
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/22 Press To Select.unity
+    guid: fd2a463cb86fbad4b92c709ebaf2b843
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/23    Transform Relative.unity
+    guid: ac9caf83cfcbe894eab16c237b2aeb74
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/24       Isolate.unity
+    guid: 7623668b6b9ad5b4aa2ae951866037e9
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/Finger Trail.unity
+    guid: 8717ad9118782244ba638a66799dba09
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/LeanTouch+.unity
+    guid: 947eac2e6090e724b83bfffc7748bdb4
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/Sidescroll2D.unity
+    guid: 84b65774cb71fc543a5cba771cda3f7b
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/Sidescroll3D.unity
+    guid: 4efc2379fae650d43b7a9c114f6e5772
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/TouchEvents.unity
+    guid: 8ac725435c4f16446b182ce8844aac54
+  - enabled: 0
+    path: Assets/Plugins/CW/LeanTouch/Examples/TwistRotateCustomAxis.unity
+    guid: 1e746ea22b442744c8a81882c3144327
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: e2414e6b85ba0aa4c85419dd079ac119, type: 2}

@@ -1,0 +1,378 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073b5878cbef2364cb928faafba64ca5, type: 3}
+  m_Name: AltUnityTesterEditorSettings
+  m_EditorClassIdentifier: 
+  appendToName: 0
+  AdbPath: /usr/local/bin/adb
+  IProxyPath: /usr/local/bin/iproxy
+  XcrunPath: /usr/bin/xcrun
+  MyTests:
+  - _selected: 0
+    _testName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 6
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 6
+  - _selected: 1
+    _testName: AUT_NIS_tests
+    _status: 1
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 6
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 6
+  - _selected: 1
+    _testName: AUT_NIS_tests.TestBeginEndTouch
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AUT_NIS_tests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 1.7032088
+    path: Assets/Editor/AUT_NIS_tests.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: AUT_NIS_tests.TestSwipeDown
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AUT_NIS_tests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.2476397
+    path: Assets/Editor/AUT_NIS_tests.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: AUT_NIS_tests.TestSwipeLeft
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AUT_NIS_tests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.2175183
+    path: Assets/Editor/AUT_NIS_tests.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: AUT_NIS_tests.TestSwipeRight
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AUT_NIS_tests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.2157555
+    path: Assets/Editor/AUT_NIS_tests.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: AUT_NIS_tests.TestSwipeUp
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AUT_NIS_tests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.2150782
+    path: Assets/Editor/AUT_NIS_tests.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: AUT_NIS_tests.TestTapAtCoordinates
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AUT_NIS_tests
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 1.6110379
+    path: Assets/Editor/AUT_NIS_tests.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.Integration_CanSendAndReceiveEvents
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: C:/Users/andra.cardas/Desktop/lean-touch/leantouch-csharp-tests/LeanTouch/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  Scenes:
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: 
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Plugins/CW/LeanTouch/Examples/01 Finger Down.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/02 Finger Up.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/03 Finger Swipe.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/04    Rotation.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Plugins/CW/LeanTouch/Examples/05    Direction 4.unity
+    _buildIndex: 1
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/06    Direction 8.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/07 Finger Tap.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/08    Spawn.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/09       Block.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/10       Double.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/11 Finger Old.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/12 Transform.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/13    Relative.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/14 Selectable.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Plugins/CW/LeanTouch/Examples/15 Tap To Select.unity
+    _buildIndex: 2
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/16    Limit = Stop At Max.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/17    Limit = Deselect First.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Plugins/CW/LeanTouch/Examples/18    Destroy.unity
+    _buildIndex: 3
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/19    Transform.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/20    Transform Relative.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/21 Tap To Toggle.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/22 Press To Select.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/23    Transform Relative.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/24       Isolate.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/Finger Trail.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/LeanTouch+.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/Sidescroll2D.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/Sidescroll3D.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/TouchEvents.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Plugins/CW/LeanTouch/Examples/TwistRotateCustomAxis.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Scenes/SampleScene.unity
+    _buildIndex: 0
+  platform: 1
+  StandaloneTarget: 5
+  RanInEditor: 1
+  ScenePathDisplayed: 0
+  InputVisualizer: 0
+  ShowPopUp: 1
+  BuildLocationPath: 
+  LatestInspectorVersion: 1.4.0
+  ShowInsectorPopUpInEditor: 0
+  AltUnityTesterPort: 13000
+  KeepAUTSymbolDefined: 0
