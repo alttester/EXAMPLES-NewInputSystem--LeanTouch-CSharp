@@ -36,102 +36,102 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetCurrentSceneCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTapElementCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityGetScreenshotCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllLoadedScenesAndObjectsCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityId.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityLoadSceneCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMultipointSwipeCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerDownFromObjectCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnitySetComponentPropertyCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\BaseWebSocketHandler.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPressKeyboardKeyCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTapCoordinatesCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityUnloadSceneNotification.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetAllLoadedScenesCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\ICommandHandler.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnitySwipeCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\CommandHandler.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityEndTouchCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityInvalidCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\PathSelector.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllMethodsCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerEnterObjectCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityActivateNotificationCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnitySetTimeScaleCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\InputController.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMoveTouchCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltClientWebSocketHandler.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\UI\AltUnityInputMark.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltWebGLWebSocketHandler.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\BaseNotification.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetTimeScaleCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityClickElementCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityHighlightSelectedObjectCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityHightlightObjectFromCoordinatesCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityLoadSceneNotification.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllComponentsCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnitySetServerLoggingCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllScenesCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeyUpCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketServerCommunication.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\UI\AltUnityInputsVisualizer.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\NewInputSystem.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityTextureScale.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPressKeyboardKeysCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityBaseScreenshotCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeysDownCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMoveMouseCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityLogNotification.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityContractResolver.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\UnityStruct\AltUnityVector.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityScrollCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllFieldsCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommandWithWait.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityUnloadSceneCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltServerWebSocketHandler.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityDeletePlayerPrefCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityReflectionMethodsCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityBaseClassFindObjectsCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketWebGlCommunication.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllPropertiesCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityGetServerVersionCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectAtCoordinates.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectsLightCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeysUpCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketClientCommunication.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\ICommunication.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeyDownCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityInstrumentationSettings.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltResponseQueue.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityMockUpPointerInputModule.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityDeactivateNotificationCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTiltCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Logging\ServerLogManager.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityDragObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityReflectionMethodsCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityRunner.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetKeyPlayerPrefCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerExitObjectCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetComponentPropertyCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityGetScreenshotPNGCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\FindObjectViaRayCast.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetTextCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnitySetKeyPlayerPrefCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityApplicationPausedNotification.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectsCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityKeyMapping.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityBeginTouchCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityClickCoordinatesCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerUpFromObjectCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllCamerasCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnitySetTextCommand.cs" />
-     <Compile Include="Assets\AltUnityTester\AltUnityServer\Input.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityCallComponentMethodForObjectCommand.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\UI\AltUnityDialog.cs" />
      <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityDeleteKeyPlayerPrefCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMultipointSwipeCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTapCoordinatesCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\ICommandHandler.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\UI\AltUnityInputMark.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllComponentsCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\UI\AltUnityInputsVisualizer.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityBaseScreenshotCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeysDownCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\UnityStruct\AltUnityVector.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityDragObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnitySetTextCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\BaseWebSocketHandler.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\CommandHandler.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityEndTouchCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityActivateNotificationCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMoveTouchCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltWebGLWebSocketHandler.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityHightlightObjectFromCoordinatesCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeyUpCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityScrollCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectAtCoordinates.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketClientCommunication.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltResponseQueue.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityMockUpPointerInputModule.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetComponentPropertyCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityBeginTouchCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTapElementCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\PathSelector.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltClientWebSocketHandler.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityTextureScale.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityUnloadSceneCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllPropertiesCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectsCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityKeyMapping.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerEnterObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\BaseNotification.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityClickElementCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityHighlightSelectedObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityFindObjectsLightCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeysUpCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTiltCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Logging\ServerLogManager.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllCamerasCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Input.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityId.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPressKeyboardKeyCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityUnloadSceneNotification.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetAllLoadedScenesCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityInvalidCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnitySetTimeScaleCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetTimeScaleCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketServerCommunication.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommandWithWait.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityDeletePlayerPrefCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityInstrumentationSettings.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetCurrentSceneCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerDownFromObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnitySetComponentPropertyCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnitySwipeCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityLoadSceneNotification.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllScenesCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPressKeyboardKeysCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityGetServerVersionCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerExitObjectCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnitySetKeyPlayerPrefCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetTextCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllLoadedScenesAndObjectsCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllMethodsCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\InputController.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMoveMouseCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityLogNotification.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\AltServerWebSocketHandler.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\ICommunication.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityKeyDownCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityDeactivateNotificationCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetKeyPlayerPrefCommand.cs" />
+     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityGetScreenshotPNGCommand.cs" />
      <None Include="Assets\AltUnityTester\AltUnityServer\AltUnityTester.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -365,16 +365,16 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\nlog.4.7.9\lib\netstandard2.0\NLog.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\nlog.4.7.9\lib\netstandard2.0\NLog.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

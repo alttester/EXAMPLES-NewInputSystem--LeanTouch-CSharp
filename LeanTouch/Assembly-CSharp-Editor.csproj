@@ -269,28 +269,22 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\nlog.4.7.9\lib\netstandard2.0\NLog.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\andra.cardas\Desktop\lean-touch\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -709,18 +703,6 @@
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
       <Project>{de10ec02-94d9-c49a-42c7-23828a01afab}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AltUnityTester.csproj">
-      <Project>{a5447acf-5800-12ca-d104-3a7ae267b1ae}</Project>
-      <Name>AltUnityTester</Name>
-    </ProjectReference>
-    <ProjectReference Include="AltUnityTesterEditor.csproj">
-      <Project>{252e8ec0-4b65-a3ae-355b-4a00eb187eb2}</Project>
-      <Name>AltUnityTesterEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AltUnityDriver.csproj">
-      <Project>{f44b902d-464c-073e-e68c-ac0189206bea}</Project>
-      <Name>AltUnityDriver</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

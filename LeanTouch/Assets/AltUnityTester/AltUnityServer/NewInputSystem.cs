@@ -1,4 +1,4 @@
-#if ENABLE_INPUT_SYSTEM
+#if ALTUNITYTESTER && ENABLE_INPUT_SYSTEM
 using System.Collections;
 using System.Collections.Generic;
 using Altom.AltUnityTester;
@@ -30,6 +30,10 @@ namespace Altom.AltUnityTester
         {
             if (Instance == null)
                 Instance = this;
+            else
+            {
+                return;
+            }
             InputTestFixture = new InputTestFixture();
 #if USE_INPUT_SYSTEM_1_3
             TestExecutionContext testExecutionContext = new TestExecutionContext();
@@ -71,7 +75,7 @@ namespace Altom.AltUnityTester
                 Accelerometer = InputSystem.AddDevice<Accelerometer>("AltUnityAccelerometer");
             }
             InputTestFixture.Set(Mouse.position, new Vector2(0, 0));
-
+            EnableDefaultDevicesAndDisableAltUnityDevices();
 
         }
 
@@ -86,7 +90,6 @@ namespace Altom.AltUnityTester
                 else
                 {
                     InputSystem.DisableDevice(device);
-
                 }
             }
 
@@ -326,7 +329,7 @@ namespace Altom.AltUnityTester
             touches[fingerId] = true;
         }
 
-        #region private interface
+#region private interface
         private static ButtonControl keyCodeToButtonControl(KeyCode keyCode, float power = 1)
         {
             foreach (var e in AltUnityKeyMapping.StringToKeyCode)
@@ -380,7 +383,7 @@ namespace Altom.AltUnityTester
             }
             return 0;
         }
-        #endregion
+#endregion
     }
 
 }
@@ -395,9 +398,11 @@ public class TestExample
 }
 #endif
 #else
+using UnityEngine;
+
 namespace Altom.AltUnityTester
 {
-    public class NewInputSystem
+    public class NewInputSystem : MonoBehaviour
     {
 
     }
