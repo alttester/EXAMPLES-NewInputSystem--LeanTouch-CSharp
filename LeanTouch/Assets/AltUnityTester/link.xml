@@ -3,9 +3,9 @@
         <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
     </assembly>
 
-    <assembly fullname="NLog">
+    <!-- <assembly fullname="NLog">
         <type fullname="NLog.*" preserve="all" />
-    </assembly>
+    </assembly> -->
 
     <assembly fullname="AltUnityTester">
         <type fullname="Altom.*" preserve="all" />
