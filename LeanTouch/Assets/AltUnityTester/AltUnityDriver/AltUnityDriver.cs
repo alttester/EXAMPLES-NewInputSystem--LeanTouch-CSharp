@@ -51,7 +51,6 @@ namespace Altom.AltUnityDriver
             major = parts[0];
             minor = parts.Length > 1 ? parts[1] : string.Empty;
         }
-
         private void checkServerVersion()
         {
             string serverVersion;
@@ -77,6 +76,7 @@ namespace Altom.AltUnityDriver
             if (majorServer != majorDriver || minorServer != minorDriver)
             {
                 string message = "Version mismatch. AltUnity Driver version is " + VERSION + ". AltUnity Tester version is " + serverVersion + ".";
+
                 logger.Warn(message);
             }
         }
@@ -85,85 +85,79 @@ namespace Altom.AltUnityDriver
         {
             communicationHandler.Close();
         }
-
         public void SetCommandResponseTimeout(int commandTimeout)
         {
             communicationHandler.SetCommandTimeout(commandTimeout);
         }
-
-        public void SetDelayAfterCommand(float delay)
+        public void SetDelayAfterCommand(int delayTimeInMilliseconds)
         {
-            communicationHandler.SetDelayAfterCommand(delay);
+            communicationHandler.SetDelayAfterCommand(delayTimeInMilliseconds);
         }
 
-        public float GetDelayAfterCommand() {
+        public int GetDelayAfterCommand() {
             return communicationHandler.GetDelayAfterCommand();
         }
 
         public string GetServerVersion()
         {
             string serverVersion = new AltUnityGetServerVersion(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return serverVersion;
         }
-
         public void LoadScene(string scene, bool loadSingle = true)
         {
             new AltUnityLoadScene(communicationHandler, scene, loadSingle).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void UnloadScene(string scene)
         {
             new AltUnityUnloadScene(communicationHandler, scene).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public List<string> GetAllLoadedScenes()
         {
             var sceneList = new AltUnityGetAllLoadedScenes(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return sceneList;
         }
 
         public List<AltUnityObject> FindObjects(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             var listOfObjects = new AltUnityFindObjects(communicationHandler, by, value, cameraBy, cameraValue, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfObjects;
         }
 
         public List<AltUnityObject> FindObjectsWhichContain(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             var listOfObjects = new AltUnityFindObjectsWhichContain(communicationHandler, by, value, cameraBy, cameraValue, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfObjects;
         }
 
         public AltUnityObject FindObject(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             var findObject = new AltUnityFindObject(communicationHandler, by, value, cameraBy, cameraValue, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return findObject;
         }
 
         public AltUnityObject FindObjectWhichContains(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             var findObject = new AltUnityFindObjectWhichContains(communicationHandler, by, value, cameraBy, cameraValue, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return findObject;
         }
 
         public void SetTimeScale(float timeScale)
         {
             new AltUnitySetTimeScale(communicationHandler, timeScale).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public float GetTimeScale()
         {
             var timeScale = new AltUnityGetTimeScale(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return timeScale;
         }
 
@@ -171,75 +165,66 @@ namespace Altom.AltUnityDriver
                     object[] parameters, string[] typeOfParameters = null, string assemblyName = "")
         {
             var result = new AltUnityCallStaticMethod<T>(communicationHandler, typeName, methodName, parameters, typeOfParameters, assemblyName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return result;
         }
 
         public T GetStaticProperty<T>(string componentName, string propertyName, string assemblyName, int maxDepth = 2)
         {
             var propertyValue = new AltUnityGetStaticProperty<T>(communicationHandler, componentName, propertyName, assemblyName, maxDepth).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return propertyValue;
         }
 
         public void DeletePlayerPref()
         {
             new AltUnityDeletePlayerPref(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void DeleteKeyPlayerPref(string keyName)
         {
             new AltUnityDeleteKeyPlayerPref(communicationHandler, keyName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void SetKeyPlayerPref(string keyName, int valueName)
         {
             new AltUnitySetKeyPLayerPref(communicationHandler, keyName, valueName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void SetKeyPlayerPref(string keyName, float valueName)
         {
             new AltUnitySetKeyPLayerPref(communicationHandler, keyName, valueName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void SetKeyPlayerPref(string keyName, string valueName)
         {
             new AltUnitySetKeyPLayerPref(communicationHandler, keyName, valueName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public int GetIntKeyPlayerPref(string keyName)
         {
             var keyValue = new AltUnityGetIntKeyPlayerPref(communicationHandler, keyName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return keyValue;
         }
-
         public float GetFloatKeyPlayerPref(string keyName)
         {
             var keyValue = new AltUnityGetFloatKeyPlayerPref(communicationHandler, keyName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return keyValue;
         }
-
         public string GetStringKeyPlayerPref(string keyName)
         {
             var keyValue = new AltUnityGetStringKeyPlayerPref(communicationHandler, keyName).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return keyValue;
         }
-
         public string GetCurrentScene()
         {
             var sceneName = new AltUnityGetCurrentScene(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return sceneName;
         }
-
         /// <summary>
         /// Simulates a swipe action between two points.
         /// </summary>
@@ -250,7 +235,7 @@ namespace Altom.AltUnityDriver
         public void Swipe(AltUnityVector2 start, AltUnityVector2 end, float duration = 0.1f, bool wait = true)
         {
             new AltUnitySwipe(communicationHandler, start, end, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -262,7 +247,7 @@ namespace Altom.AltUnityDriver
         public void MultipointSwipe(AltUnityVector2[] positions, float duration = 0.1f, bool wait = true)
         {
             new AltUnityMultipointSwipe(communicationHandler, positions, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -274,6 +259,7 @@ namespace Altom.AltUnityDriver
         public void HoldButton(AltUnityVector2 coordinates, float duration, bool wait = true)
         {
             Swipe(coordinates, coordinates, duration, wait);
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -286,19 +272,17 @@ namespace Altom.AltUnityDriver
         public void PressKey(AltUnityKeyCode keyCode, float power = 1, float duration = 0.1f, bool wait = true)
         {
             new AltUnityPressKey(communicationHandler, keyCode, power, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void KeyDown(AltUnityKeyCode keyCode, float power = 1)
         {
             new AltUnityKeyDown(communicationHandler, keyCode, power).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void KeyUp(AltUnityKeyCode keyCode)
         {
             new AltUnityKeyUp(communicationHandler, keyCode).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -311,7 +295,6 @@ namespace Altom.AltUnityDriver
         public void PressKeys(AltUnityKeyCode[] keyCodes, float power = 1, float duration = 0.1f, bool wait = true)
         {
             new AltUnityPressKeys(communicationHandler, keyCodes, power, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -322,7 +305,6 @@ namespace Altom.AltUnityDriver
         public void KeysDown(AltUnityKeyCode[] keyCodes, float power = 1)
         {
             new AltUnityKeysDown(communicationHandler, keyCodes, power).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -332,7 +314,6 @@ namespace Altom.AltUnityDriver
         public void KeysUp(AltUnityKeyCode[] keyCodes)
         {
             new AltUnityKeysUp(communicationHandler, keyCodes).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -344,9 +325,8 @@ namespace Altom.AltUnityDriver
         public void MoveMouse(AltUnityVector2 coordinates, float duration = 0.1f, bool wait = true)
         {
             new AltUnityMoveMouse(communicationHandler, coordinates, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         /// <summary>
         /// Simulate scroll action in your game.
         /// </summary>
@@ -356,7 +336,7 @@ namespace Altom.AltUnityDriver
         public void Scroll(float speed = 1, float duration = 0.1f, bool wait = true)
         {
             new AltUnityScroll(communicationHandler, speed, 0, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -368,7 +348,6 @@ namespace Altom.AltUnityDriver
         public void Scroll(AltUnityVector2 scrollValue, float duration = 0.1f, bool wait = true)
         {
             new AltUnityScroll(communicationHandler, scrollValue.y, scrollValue.x, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -381,7 +360,7 @@ namespace Altom.AltUnityDriver
         public void Tap(AltUnityVector2 coordinates, int count = 1, float interval = 0.1f, bool wait = true)
         {
             new AltUnityTapCoordinates(communicationHandler, coordinates, count, interval, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         /// <summary>
@@ -394,9 +373,8 @@ namespace Altom.AltUnityDriver
         public void Click(AltUnityVector2 coordinates, int count = 1, float interval = 0.1f, bool wait = true)
         {
             new AltUnityClickCoordinates(communicationHandler, coordinates, count, interval, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         /// <summary>
         /// Simulates device rotation action in your game.
         /// </summary>
@@ -406,128 +384,120 @@ namespace Altom.AltUnityDriver
         public void Tilt(AltUnityVector3 acceleration, float duration = 0.1f, bool wait = true)
         {
             new AltUnityTilt(communicationHandler, acceleration, duration, wait).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         public List<AltUnityObject> GetAllElements(By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             var listOfObjects = new AltUnityGetAllElements(communicationHandler, cameraBy, cameraValue, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfObjects;
         }
-
         public List<AltUnityObjectLight> GetAllElementsLight(By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             var listOfObjects = new AltUnityGetAllElementsLight(communicationHandler, cameraBy, cameraValue, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfObjects;
         }
 
         public void WaitForCurrentSceneToBe(string sceneName, double timeout = 10, double interval = 1)
         {
             new AltUnityWaitForCurrentSceneToBe(communicationHandler, sceneName, timeout, interval).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         public AltUnityObject WaitForObject(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
         {
             var objectFound = new AltUnityWaitForObject(communicationHandler, by, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return objectFound;
         }
 
         public void WaitForObjectNotBePresent(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
         {
             new AltUnityWaitForObjectNotBePresent(communicationHandler, by, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
 
         public AltUnityObject WaitForObjectWhichContains(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
         {
             var objectFound = new AltUnityWaitForObjectWhichContains(communicationHandler, by, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return objectFound;
+
         }
 
         public List<string> GetAllScenes()
         {
             var listOfScenes = new AltUnityGetAllScenes(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfScenes;
         }
-
         public List<AltUnityObject> GetAllCameras()
         {
             var listOfCameras = new AltUnityGetAllCameras(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfCameras;
         }
 
         public List<AltUnityObject> GetAllActiveCameras()
         {
             var listOfCameras = new AltUnityGetAllActiveCameras(communicationHandler).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfCameras;
         }
-
         public AltUnityTextureInformation GetScreenshot(AltUnityVector2 size = default(AltUnityVector2), int screenShotQuality = 100)
         {
             var textureInformation = new AltUnityGetScreenshot(communicationHandler, size, screenShotQuality).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return textureInformation;
         }
-
         public AltUnityTextureInformation GetScreenshot(int id, AltUnityColor color, float width, AltUnityVector2 size = default(AltUnityVector2), int screenShotQuality = 100)
         {
             var textureInformation = new AltUnityGetHightlightObjectScreenshot(communicationHandler, id, color, width, size, screenShotQuality).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return textureInformation;
         }
-
         public AltUnityTextureInformation GetScreenshot(AltUnityVector2 coordinates, AltUnityColor color, float width, out AltUnityObject selectedObject, AltUnityVector2 size = default(AltUnityVector2), int screenShotQuality = 100)
         {
             var textureInformation = new AltUnityGetHightlightObjectFromCoordinatesScreenshot(communicationHandler, coordinates, color, width, size, screenShotQuality).Execute(out selectedObject);
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return textureInformation;
         }
-
         public void GetPNGScreenshot(string path)
         {
             new AltUnityGetPNGScreenshot(communicationHandler, path).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public List<AltUnityObjectLight> GetAllLoadedScenesAndObjects(bool enabled = true)
         {
             var listOfObjects = new AltUnityGetAllLoadedScenesAndObjects(communicationHandler, enabled).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return listOfObjects;
         }
 
         public void SetServerLogging(AltUnityLogger logger, AltUnityLogLevel logLevel)
         {
             new AltUnitySetServerLogging(communicationHandler, logger, logLevel).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public int BeginTouch(AltUnityVector2 screenPosition)
         {
             var touchId = new AltUnityBeginTouch(communicationHandler, screenPosition).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return touchId;
         }
-
         public void MoveTouch(int fingerId, AltUnityVector2 screenPosition)
         {
             new AltUnityMoveTouch(communicationHandler, fingerId, screenPosition).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
-
         public void EndTouch(int fingerId)
         {
             new AltUnityEndTouch(communicationHandler, fingerId).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
+
 
         /// <summary>
         /// Retrieves the Unity object at given coordinates.
@@ -538,7 +508,7 @@ namespace Altom.AltUnityDriver
         public AltUnityObject FindObjectAtCoordinates(AltUnityVector2 coordinates)
         {
             var objectFound = new AltUnityFindObjectAtCoordinates(communicationHandler, coordinates).Execute();
-            communicationHandler.SleepFor(communicationHandler.GetDelayAfterCommand());
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
             return objectFound;
         }
 
@@ -546,10 +516,10 @@ namespace Altom.AltUnityDriver
         {
             new AddNotificationListener<T>(communicationHandler, notificationType, callback, overwrite).Execute();
         }
-
         public void RemoveNotificationListener(NotificationType notificationType)
         {
             new RemoveNotificationListener(communicationHandler, notificationType).Execute();
+            Thread.Sleep(communicationHandler.GetDelayAfterCommand());
         }
     }
 }

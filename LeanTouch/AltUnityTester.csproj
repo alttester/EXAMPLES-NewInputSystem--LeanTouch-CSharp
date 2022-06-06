@@ -365,16 +365,16 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niuniu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
-        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\nlog.4.7.9\lib\netstandard2.0\NLog.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niuniu\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\nlog.4.7.9\lib\netstandard2.0\NLog.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niuniu\leantouch-csharp-tests\LeanTouch\Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\andra.cardas\Desktop\niu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\andra.cardas\Desktop\niuniu\leantouch-csharp-tests\LeanTouch\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

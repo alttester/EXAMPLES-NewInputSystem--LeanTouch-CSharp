@@ -1,4 +1,4 @@
-#if ALTUNITYTESTER && ENABLE_INPUT_SYSTEM
+#if ENABLE_INPUT_SYSTEM
 using System.Collections;
 using System.Collections.Generic;
 using Altom.AltUnityTester;
@@ -30,10 +30,6 @@ namespace Altom.AltUnityTester
         {
             if (Instance == null)
                 Instance = this;
-            else
-            {
-                return;
-            }
             InputTestFixture = new InputTestFixture();
 #if USE_INPUT_SYSTEM_1_3
             TestExecutionContext testExecutionContext = new TestExecutionContext();
@@ -75,7 +71,7 @@ namespace Altom.AltUnityTester
                 Accelerometer = InputSystem.AddDevice<Accelerometer>("AltUnityAccelerometer");
             }
             InputTestFixture.Set(Mouse.position, new Vector2(0, 0));
-            EnableDefaultDevicesAndDisableAltUnityDevices();
+
 
         }
 
@@ -90,6 +86,7 @@ namespace Altom.AltUnityTester
                 else
                 {
                     InputSystem.DisableDevice(device);
+
                 }
             }
 
@@ -133,8 +130,6 @@ namespace Altom.AltUnityTester
             var deltaUnchanged = false;
             while (time < duration)
             {
-                yield return null;
-                time += UnityEngine.Time.unscaledDeltaTime;
                 UnityEngine.Vector2 delta;
                 if (time + UnityEngine.Time.unscaledDeltaTime < duration)
                 {
@@ -144,6 +139,7 @@ namespace Altom.AltUnityTester
                 {
                     delta = location - new UnityEngine.Vector2(mousePosition.x, mousePosition.y);
                 }
+
                 mousePosition += delta;
                 if (delta == Vector2.zero)
                 {
@@ -151,6 +147,8 @@ namespace Altom.AltUnityTester
                     break;
                 }
                 InputTestFixture.Move(Mouse.position, mousePosition, delta);
+                yield return null;
+                time += UnityEngine.Time.unscaledDeltaTime;
             }
             if (deltaUnchanged)
             {
@@ -158,6 +156,8 @@ namespace Altom.AltUnityTester
                 InputTestFixture.Move(Mouse.position, mousePosition, Vector2.zero);
                 yield return new WaitForSecondsRealtime(duration - time);
             }
+            InputTestFixture.Set(Mouse.position, mousePosition);
+
         }
 
 
@@ -287,8 +287,6 @@ namespace Altom.AltUnityTester
                 var distance = positions[i] - currentPosition;
                 while (time < oneTouchDuration)
                 {
-                    yield return null;
-                    time += UnityEngine.Time.unscaledDeltaTime;
                     UnityEngine.Vector2 delta;
 
                     if (time + UnityEngine.Time.unscaledDeltaTime < oneTouchDuration)
@@ -302,6 +300,8 @@ namespace Altom.AltUnityTester
                     currentPosition += delta;
 
                     MoveTouch(touchId, currentPosition);
+                    yield return null;
+                    time += UnityEngine.Time.unscaledDeltaTime;
                 }
             }
             endTouchScreenPos = positions[positions.Length - 1];
@@ -329,7 +329,7 @@ namespace Altom.AltUnityTester
             touches[fingerId] = true;
         }
 
-#region private interface
+        #region private interface
         private static ButtonControl keyCodeToButtonControl(KeyCode keyCode, float power = 1)
         {
             foreach (var e in AltUnityKeyMapping.StringToKeyCode)
@@ -383,7 +383,7 @@ namespace Altom.AltUnityTester
             }
             return 0;
         }
-#endregion
+        #endregion
     }
 
 }
@@ -398,11 +398,9 @@ public class TestExample
 }
 #endif
 #else
-using UnityEngine;
-
 namespace Altom.AltUnityTester
 {
-    public class NewInputSystem : MonoBehaviour
+    public class NewInputSystem
     {
 
     }

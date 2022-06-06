@@ -38,11 +38,6 @@ namespace Altom.AltUnityTester
                         pointerEventData.selectedObject = pointerEventData.pointerPress;
                         pointerEventData.pointerDrag = ExecuteEvents.ExecuteHierarchy(raycastResult.gameObject, pointerEventData,
                             ExecuteEvents.dragHandler);
-                        if (pointerEventData.pointerDrag != null)
-                        {
-                            pointerEventData.pointerPress = null;
-                            pointerEventData.eligibleForClick = false;
-                        }
                         if (monoBehaviourTarget != null) monoBehaviourTarget.SendMessage("OnMouseDown", UnityEngine.SendMessageOptions.DontRequireReceiver);
                         return pointerEventData;
                     case UnityEngine.TouchPhase.Moved:
@@ -87,10 +82,8 @@ namespace Altom.AltUnityTester
                             var currentOverGo = previousData.pointerCurrentRaycast.gameObject;
                             var pointerUpHandler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(currentOverGo);
 
-                            ;
                             if (previousData.pointerPress == pointerUpHandler && previousData.eligibleForClick)
                             {
-
                                 ExecuteEvents.ExecuteHierarchy(previousData.pointerPress, previousData,
                                       ExecuteEvents.pointerClickHandler);
                                 previousData.eligibleForClick = false;

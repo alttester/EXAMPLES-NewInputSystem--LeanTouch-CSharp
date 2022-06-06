@@ -1,4 +1,3 @@
-#if ALTUNITYTESTER && ENABLE_INPUT_SYSTEM
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -352,4 +351,3 @@ namespace Altom.AltUnityTester
         }
     }
 }
-#endif

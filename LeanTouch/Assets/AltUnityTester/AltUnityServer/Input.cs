@@ -50,7 +50,6 @@ public class Input : MonoBehaviour
     public static string LastButtonUp { get; set; }
 
     public static bool UseCustomInput { get => _useCustomInput; set => _useCustomInput = value; }
-
     public static AltUnityMockUpPointerInputModule AltUnityMockUpPointerInputModule
     {
         get
@@ -69,10 +68,10 @@ public class Input : MonoBehaviour
             }
             return _mockUpPointerInputModule;
         }
+
     }
 
     #region MonoBehaviour
-
     public void Start()
     {
         _instance = this;
@@ -114,7 +113,6 @@ public class Input : MonoBehaviour
         }
 
     }
-
     #endregion
 
     #region UnityEngine.Input.AltUnityTester.NotImplemented
@@ -124,7 +122,6 @@ public class Input : MonoBehaviour
         get { return UnityEngine.Input.simulateMouseWithTouches; }
         set { UnityEngine.Input.simulateMouseWithTouches = value; }
     }
-
     public static bool mousePresent
     {
         get
@@ -174,7 +171,6 @@ public class Input : MonoBehaviour
     {
         get { return UnityEngine.Input.compositionString; }
     }
-
     public static bool imeIsSelected
     {
         get { return UnityEngine.Input.imeIsSelected; }
@@ -223,13 +219,13 @@ public class Input : MonoBehaviour
     {
         return UnityEngine.Input.GetJoystickNames();
     }
-
     public static void ResetInputAxes()
     {
         UnityEngine.Input.ResetInputAxes();
     }
 
     #endregion
+
 
     #region UnityEngine.Input.AltUnityTester
 
@@ -246,7 +242,7 @@ public class Input : MonoBehaviour
                 return UnityEngine.Input.anyKey;
             }
         }
-        }
+    }
 
     public static bool anyKeyDown
     {
@@ -303,7 +299,6 @@ public class Input : MonoBehaviour
             _acceleration = acceleration;
         }
     }
-
     public static UnityEngine.AccelerationEvent[] accelerationEvents
     {
         get
@@ -322,7 +317,6 @@ public class Input : MonoBehaviour
             _accelerationEvents = accelerationEvents;
         }
     }
-
     public static int accelerationEventCount
     {
         get
@@ -338,6 +332,7 @@ public class Input : MonoBehaviour
         }
     }
 
+
     public static UnityEngine.Touch[] touches
     {
         get { return _useCustomInput ? _touches : UnityEngine.Input.touches; }
@@ -346,7 +341,6 @@ public class Input : MonoBehaviour
             _touches = value;
         }
     }
-
     public UnityEngine.Touch this[int i]
     {
         get { return _useCustomInput ? _touches[i] : UnityEngine.Input.GetTouch(i); }
@@ -437,7 +431,6 @@ public class Input : MonoBehaviour
             return UnityEngine.Input.GetAxisRaw(axisName);
         }
     }
-
     public static bool GetButton(string buttonName)
     {
         if (_useCustomInput)
@@ -657,6 +650,7 @@ public class Input : MonoBehaviour
 
     #endregion
 
+
     #region public commands interface
     public static int BeginTouch(UnityEngine.Vector3 screenPosition)
     {
@@ -846,6 +840,9 @@ public class Input : MonoBehaviour
         } while (time < duration);
     }
 
+
+
+
     internal static System.Collections.IEnumerator ScrollLifeCycle(float scrollVertical, float scrollHorizontal, float duration)
     {
         float timeSpent = 0;
@@ -870,10 +867,9 @@ public class Input : MonoBehaviour
         }
         _mouseScrollDelta = UnityEngine.Vector2.zero;//reset the value after scroll ended
     }
-
     internal static IEnumerator runThrowingIterator( //TODO Remove this method when all the input methods were implemented in InputController
-            IEnumerator enumerator,
-            Action<Exception> done)
+           IEnumerator enumerator,
+           Action<Exception> done)
     {
         Exception err = null;
         while (true)
@@ -897,6 +893,8 @@ public class Input : MonoBehaviour
         }
         done.Invoke(err);
     }
+
+
     #endregion
 
     #region private interface
@@ -1244,6 +1242,7 @@ public class Input : MonoBehaviour
 
     private static void mouseUpTrigger(PointerEventData.InputButton mouseButton, PointerEventData pointerEventData, GameObject eventSystemTarget, GameObject monoBehaviourTarget)
     {
+
         /* pointer/touch up */
         if (eventSystemTarget == eventSystemTargetMouseDown && mouseButton == PointerEventData.InputButton.Left)
         {
@@ -1270,6 +1269,8 @@ public class Input : MonoBehaviour
         yield return new WaitForSecondsRealtime(duration);
         mouseUpTrigger(mouseButton, pointerEventData, eventSystemTarget, monoBehaviourTarget);
     }
+
+
 
     public static System.Collections.IEnumerator AccelerationLifeCycle(UnityEngine.Vector3 accelarationValue, float duration)
     {
@@ -1441,7 +1442,6 @@ public class Input : MonoBehaviour
 
 namespace Altom.AltUnityTester.InputModule
 {
-
     public class KeyStructure
     {
         public KeyStructure(UnityEngine.KeyCode keyCode, float power)
@@ -1479,7 +1479,6 @@ using UnityEngine;
 
 namespace Altom.AltUnityTester.InputModule
 {
-
     public class Input : MonoBehaviour
     {
 
