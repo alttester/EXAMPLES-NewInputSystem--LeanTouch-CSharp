@@ -89,7 +89,7 @@ namespace Altom.AltUnityTester.UI
             logger.Debug("Restart the AltUnity Tester.");
 
             int port;
-            if (Int32.TryParse(PortInputField.text, out port) && port > 0 && port < 65535)
+            if (Int32.TryParse(PortInputField.text, out port) && port > 0 && port <= 65535)
             {
                 InstrumentationSettings.AltUnityTesterPort = port;
             }
@@ -193,7 +193,7 @@ namespace Altom.AltUnityTester.UI
 
             _updateQueue.ScheduleResponse(() =>
             {
-#if ENABLE_INPUT_SYSTEM
+#if ALTUNITYTESTER && ENABLE_INPUT_SYSTEM
                 NewInputSystem.DisableDefaultDevicesAndEnableAltUnityDevices();
 #endif
                 setDialog(message, SUCCESS_COLOR, false);
@@ -211,7 +211,7 @@ namespace Altom.AltUnityTester.UI
                 _updateQueue.ScheduleResponse(() =>
                 {
 
-#if ENABLE_INPUT_SYSTEM
+#if ALTUNITYTESTER && ENABLE_INPUT_SYSTEM
                     NewInputSystem.EnableDefaultDevicesAndDisableAltUnityDevices();
 
 #endif
