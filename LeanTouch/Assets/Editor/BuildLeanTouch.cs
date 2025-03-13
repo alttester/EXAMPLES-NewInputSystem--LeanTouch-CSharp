@@ -177,7 +177,11 @@ public class BuildLeanTouch
     {
         return new string[]
                 {
-                    "Assets/Scenes/LeanTouch+.unity"
+                    "Assets/Plugins/CW/LeanTouch/Examples/05    Direction 4.unity",
+                    "Assets/Plugins/CW/LeanTouch/Examples/18    Destroy.unity",
+                    "Assets/Plugins/CW/LeanTouch/Examples/15 Tap To Select.unity",
+                    "Assets/Plugins/CW/LeanTouch/Examples/01 Finger Down.unity",
+                    "Assets/Plugins/CW/LeanTouch/Examples/07 Finger Tap.unity"
                 };
     }
     private static void buildGame(BuildPlayerOptions buildPlayerOptions, BuildTargetGroup targetGroup)
