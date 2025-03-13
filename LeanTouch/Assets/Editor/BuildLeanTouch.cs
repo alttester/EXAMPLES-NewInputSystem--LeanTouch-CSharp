@@ -39,7 +39,7 @@ public class BuildLeanTouch
             PlayerSettings.defaultScreenWidth = 1920;
 
             logger.Debug("Starting Windows build..." + PlayerSettings.productName + " : " + PlayerSettings.bundleVersion);
-            var buildPlayerOptions = GetBuildPlayerOptions("LeanTouch.exe", BuildTarget.StandaloneWindows64);
+            var buildPlayerOptions = GetBuildPlayerOptions("LeanTouchBuild/LeanTouch.exe", BuildTarget.StandaloneWindows64);
             buildGame(buildPlayerOptions, BuildTargetGroup.Standalone);
 
         }
